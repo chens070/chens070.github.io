@@ -1,0 +1,67 @@
+    body{
+            font-family: sans-serif;
+            background-color: white;
+            color: gray;
+        }
+        
+        .container p{
+            background-color: black;
+            color: white;
+            height: 10px;
+            padding-left: 10px;
+            margin-bottom: 0px;
+        }
+        
+            h1{
+               color: black;
+               text-align: left;
+               text-transform: uppercase;
+               font-family: sans-serif;
+               letter-spacing: 13px;
+               font-size: 70px;
+               margin-top: -20px;
+               margin-bottom: 5px;
+               width: 800px;
+            }
+            
+            .intro{
+                margin-left: 20.5%;
+            }
+            
+            p{
+                font-size: 12px;
+                padding-bottom: 10px;
+                margin: 0px;
+            }
+            
+            h2{
+                float: left;
+                color: black;
+                letter-spacing:14px;
+                text-transform: uppercase;
+                margin-top: 0px;
+                font-weight: lighter;
+            }
+            
+            .box{
+                background-color: black;
+                height: 10px;
+                margin-left: 41.5%;
+                margin-top: 8px;
+            }
+            
+            .title1{
+                background-color: lightgray;
+                width: 10.5px;
+                height: 1000px;
+                margin-left: 5px;
+                margin-top:-108px;
+                float:left;
+            }
+            .title2{
+                background-color:gray;
+                width:10px;
+                height: 1000px;
+                float: left;
+                margin-left: 10px;
+            }
