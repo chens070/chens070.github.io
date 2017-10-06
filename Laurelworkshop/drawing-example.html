@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS Still Life</title>
+	<meta charset="utf-8">
+	<style>
+
+		body {
+			background: black;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.canvas {
+			width: 900px;
+			height: 556px;
+			margin: 100px auto;
+			position: relative;
+			background: #F8EBB7;
+			z-index: -7;
+		}
+
+		.orb {
+			background: #FFFFFF;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			position: absolute;
+			bottom: 200px;
+			right: 100px;
+		}
+
+		.apple {
+			position: absolute;
+			bottom: 150px;
+			right: 400px;
+		}
+
+		.apple .body {
+			background: red;
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+		}
+
+		.apple .stem {
+			background: #2F1A04;
+			height: 20px;
+			width: 5px;
+			position: absolute;
+			top: -13px;
+			right: 35px;
+		}
+
+		.glass {
+			/*background: yellow;*/
+			position: absolute;
+			left: 100px;
+			bottom: 200px;
+		}
+
+		.glass-itself {
+			background: #FFFFFF;
+			opacity: 0.25;
+			height: 100px;
+			width: 50px;
+		}
+
+		.glass-bottom {
+			background: #FFFFFF;
+			opacity: 0.25;
+			width: 50px;
+			height: 10px;
+			border-bottom-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+			position: absolute;
+			bottom: -10px;
+		}
+
+		.glass-top {
+			border: 1px solid #FFFFFF;
+			width: 50px;
+			height: 12px;
+			border-radius: 50%;
+			position: absolute;
+			top: -6px;
+			background: #F8EBB7;
+		}
+
+		.water {
+			background: #FFFFFF;
+			width: 50px;
+			height: 12px;
+			border-radius: 50%;
+			position: absolute;
+			top: 20px;
+		}
+
+		/* Step 2. Style your objects here */
+
+	</style>
+</head>
+
+<body>
+    <div class="canvas">
+
+			<div class="orb"></div>
+
+			<div class="apple">
+				<div class="stem"></div>
+				<div class="body"></div>
+			</div>
+
+			<div class="glass">
+				<div class="glass-itself"></div>
+				<div class="glass-bottom"></div>
+				<div class="glass-top"></div>
+				<div class="water"></div>
+			</div>
+
+			<!-- <div class="vase">
+				<div class="bottom"></div>
+				<div class="middle"></div>
+				<div class="top"></div>
+			</div> -->
+
+			<!-- Step 1. Declare your objects here -->
+
+    </div>
+</body>
+
+</html>

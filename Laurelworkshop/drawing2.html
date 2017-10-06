@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS Still Life</title>
+	<meta charset="utf-8">
+	<style>
+
+		body {
+			background: black;
+		}
+
+		.canvas {
+			width: 900px;
+			height: 556px;
+			margin: 100px auto;
+			position: relative;
+			background: green;
+			z-index: -7;
+		}
+
+		.vase{
+			position: absolute;
+			bottom: 150px;
+			left: 200px;
+
+
+		}
+
+		.vase .top{
+			border-top: 100px solid #fff;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			height: 0;
+			width: 100px;
+		}
+
+		.vase .bottom{
+			border-bottom: 100px solid #fff;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			height: 0;
+			width: 100px;
+		}
+		.vase .middle{
+			width: 200px;
+			height: 20px;
+			background: purple;
+
+		}
+
+		.flower-container{
+			position: absolute;
+			bottom: 317px;
+			left: 250px;
+			bottom: 350px;
+		}
+
+		.flower-container .leaf-one{
+			width: 100px;
+			height: 50px;
+			background: lightgreen;
+			-moz-border-radius: 100px / 50px;
+			-webkit-border-radius: 100px / 50px;
+			border-radius: 100px / 50px;
+
+		}
+		.flower-container .leaf-two{
+			width: 100px;
+			height: 50px;
+			background: lightgreen;
+			-moz-border-radius: 100px / 50px;
+			-webkit-border-radius: 100px / 50px;
+			border-radius: 100px / 50px;
+			position: absolute;
+			top:20px;
+			-ms transform: rotate(-42);
+		}
+		.light{
+			width: 100px;
+			height: 100px;
+			background: lightyellow;
+			border-radius: 50px;
+			bottom: 100px;
+			left: 100px;
+			position: absolute;
+			box-shadow: 0px 0px 50px #fff;
+			animation: lightglow 1s infinite alternate;
+		}
+
+@keyframes lightglow {
+	from { box-shadow: 0px 0px 50px 3px yellow;}
+	to { box-shadow: 0px 0px 50px 5px blue;}
+}
+		.lantern{
+			width: 400px;
+			height: 250px;
+			background: white;
+			-moz-border-radius: 100px / 50px;
+			-webkit-border-radius: 100px / 50px;
+			border-radius: 200px / 150px;
+			position: absolute;
+			bottom:120px;
+			right: 50px;
+
+		}
+
+		.roll{
+			width: 30px;
+			height: 70px;
+			background: red;
+			position: absolute;
+			bottom: 100px;
+			right: 110px;
+		}
+		/* Step 2. Style your objects here */
+
+	</style>
+</head>
+
+<body>
+    <div class="canvas">
+
+			<!-- Step 1. Declare your objects here -->
+
+			<div class="vase">
+				<div class="bottom"></div>
+				<div class="middle"></div>
+				<div class="top"></div>
+    </div>
+
+			<div class="flower-container one">
+				<div class="leaf-one"></div>
+				<div class="leaf-two"></div>
+			</div>
+
+			<div class="flower-container two">
+				<div class="leaf-one"></div>
+				<div class="leaf-two"></div>
+			</div>
+
+			<div class="light">
+			</div>
+
+			<div class="lantern">
+			</div>
+
+			<div class="roll"></div>
+
+</body>
+
+</html>
