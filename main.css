@@ -1,5 +1,4 @@
 .search{
-
   border: 3pt solid orange;
   width: 300px;
   color: gray;
@@ -10,9 +9,6 @@
   font-family: sans-serif;
 }
 
-.p{
-  text-align: middle;
-}
 
 .search-button{
   border: white;
