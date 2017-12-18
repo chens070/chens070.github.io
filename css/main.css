@@ -45,3 +45,12 @@ li{
   padding: 0;
   
 }
+
+.drawing{
+  float: left;
+}
+
+.paper{
+  font-family: sans-serif;
+  margin:300px;
+}
