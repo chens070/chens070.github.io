@@ -9,6 +9,7 @@ body{
     text-align: center;
     font-family: sans-serif;
     color: #e0e1e2;
+    stroke-width: 10px;
     
 }
 .monday{color: #e01137;}
@@ -21,12 +22,15 @@ body{
 }
 
 .quotes{
+    margin-top: 600px;
     font-size: 250px;
-    margin-top: 600px;   
 }
 
 .q2{font-size: 100px;}
 .q3{font-size: 160px;}
 .q4{font-size: 80px;}
-.q5{font-family: Arial, Helvetica, sans-serif;
-color: #e01137;}
+.q5{
+    font-family: Arial, Helvetica, sans-serif;}
+.q5:hover{
+    color: #e01137;
+}
