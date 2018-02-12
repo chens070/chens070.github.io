@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+  padding-top: 20px;
+  background: #7cb19f;
+}
+
+.calender{
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  color: #e0e1e2;
+  stroke-width: 10px;}
+
+  .tuesday{color: #137246;}
+
+
+.c{
+  display: inline-block;
+  font-size: 72px;
+  outline-color: black;
+  width: 80px;
+  height: 80px;
+}
+
+.wrapper{
+  margin: 10% 20%;
+  display: inline-block;
+  padding: 10px;
+  font-family: "Trade Gothic W01 Bold 2", sans-serif;
+  font-size: 5vw;
+}
+.q{ border-bottom: 1.25vw solid black;}
+.q1{ border-top: 1.25vw solid black;}
+.box{
+  width:1000px;
+  height:100%;
+  background: #fff;
+  font-size: 200px;
+}

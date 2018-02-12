@@ -1,6 +1,7 @@
 body{
 	margin: 0;
     padding-top: 20px;
+    background: #7c93b1;
 }
 .calender{
     position: relative;
@@ -11,7 +12,7 @@ body{
     color: #e0e1e2;
     stroke-width: 10px;}
 
-.monday{color: #e01137;}
+.monday{color: #0f3355;}
 
 .c{
     display: inline-block;
