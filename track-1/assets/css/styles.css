@@ -9,7 +9,7 @@ body{
     margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
-    color: #e0e1e2;
+    color:black;
     stroke-width: 10px;}
 
 .monday{color: #0f3355;}
@@ -23,9 +23,10 @@ body{
 }
 
 .quotes{
-    margin-top: 600px;
+    margin-top: 100px;
     font-size: 250px;
     width: 1500px;
+    font-family: "Trade Gothic W01 Bold 2", sans-serif;
 }
 
 .q2{font-size: 100px;}
