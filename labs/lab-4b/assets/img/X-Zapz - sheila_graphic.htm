@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://www.sheilacheng.com/x-zapz -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>
+X-Zapz - sheila/graphic</title>
+		<!-- META -->
+		<script type="text/javascript" src="./X-Zapz - sheila_graphic_files/d72cb8eeac"></script><script src="./X-Zapz - sheila_graphic_files/nr-1071.min.js"></script><script type="text/javascript" id="www-widgetapi-script" src="./X-Zapz - sheila_graphic_files/www-widgetapi.js" async=""></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"NVNbNkRTX0BSUUVaCgwZfxdYUUVaXFweXgQLWAMPV1tf","errorBeacon":"bam.nr-data.net","beacon":"bam.nr-data.net","queueTime":4,"applicationTime":383,"agent":"","applicationID":"17800550","licenseKey":"d72cb8eeac"}</script>
+		<meta name="viewport" content="width=device-width, maximum-scale=1"> 
+	
+	
+	
+	
+		<script src="./X-Zapz - sheila_graphic_files/iframe_api"></script>
+		<!-- CSS -->
+		
+		<link rel="stylesheet" href="./X-Zapz - sheila_graphic_files/common.css">
+		
+		<!--<link rel="stylesheet" type="text/css" href="//xprs.imcreator.com/minified/all_css.css" />-->
+<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/get_css">
+
+	<link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/3u-yISvXZg-W8AF9huUAtfo7F5KbrzPS1n_oSfH-wxOyqQUN9Xr2BF9PM6G0ytgOuPIi2FdW4YX6BYQTMQ">
+		<link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/3u-yISvXZg-W8AF9huUAtfo7F5KbrzPS1n_oSfH-wxOyqQUN9Xr2BF9PM6G0ytgOuPIi2FdW4YX6BYQTMQ">
+	
+		<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/font-awesome.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="//xprs.imcreator.com/stripe_default_css?v=1.3.8a-editor-j3&style_type=PREVIEW_STYLE&viewer=xprs" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="//xprs.imcreator.com/stripe_default_css?v=1.3.8a-editor-j3&style_type=STRIPE_STYLE&viewer=xprs" /> -->
+	
+	<link id="vbid-29fe4e33-lok1anrm-STRIPE_DATA" rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/stripe_data_css"> 
+	
+		<link id="vbid-fa3ff-kizccmkr-STRIPE_DATA" rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/stripe_data_css(1)"> 
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/fonts.css">
+		<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/effects.css">
+		<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/lightbox.css">
+	
+	<!-- ARRANGERS -->
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/stripes_arranger.css">
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/matrix_arranger.css">
+	
+	<!-- LAYOUTS -->
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/menu_layout.css">
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/multi_layout.css">
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/footer_layout.css">
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/blocks_layout.css">
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/left_layout.css">
+	
+	<link rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/spimeview.css">
+	
+	<link id="vbid-29fe4e33-lok1anrm-STATIC_STYLE" rel="stylesheet" type="text/css" href="./X-Zapz - sheila_graphic_files/static_style">
+	
+		
+		<!-- SCRIPT -->
+		<script src="./X-Zapz - sheila_graphic_files/jquery-2.1.0.min.js" type="text/javascript"></script>
+		<script src="./X-Zapz - sheila_graphic_files/js" type="text/javascript"></script>
+		
+		<script src="./X-Zapz - sheila_graphic_files/xprs_helper.js" type="text/javascript"></script>
+		
+<script src="./X-Zapz - sheila_graphic_files/imos.js" type="text/javascript"></script>
+
+		<script src="./X-Zapz - sheila_graphic_files/jquery.mobile.custom.min.js"></script>
+		<script type="text/javascript">IMOS.pageView();</script>
+		
+	
+	
+	
+	<!-- User analytics -->
+
+
+<!-- Serving analytics -->
+	<script>
+		var currentDomain =  window.location.host;
+		if (currentDomain != "imxprs.com" && currentDomain != "localhost:7000"){
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-58695071-1']);
+			_gaq.push(['_setDomainName', currentDomain]);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+		}
+	</script>
+	
+	<!-- Label config-->
+	
+		<script>
+		
+		 var LABEL_CONFIG = {};
+		 
+		</script><script type="text/javascript" charset="UTF-8" src="./X-Zapz - sheila_graphic_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./X-Zapz - sheila_graphic_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./X-Zapz - sheila_graphic_files/geocoder.js"></script><script type="text/javascript" charset="UTF-8" src="./X-Zapz - sheila_graphic_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./X-Zapz - sheila_graphic_files/AuthenticationService.Authenticate"></script><style id="for-burger">.hamburger-inner:before,.hamburger-inner,.hamburger-inner:after {background-color:rgb(0, 0, 0);}</style></head>
+
+	<body class="fast-animated-bg fixed-bg " data-ecommerce-solution="NONE" data-root-id="vbid-fa3ff-kizccmkr" data-root-style-id="style-fa3ff-99aw3txd" data-default-currency="USD" data-osid="osid--3043f97e-2469cc82" data-app-version="1.3.8a-editor-j3" data-caller="live" data-ecommerce-dashboard="http://dashboard.shoprocket.co" data-static-server="//xprs.imcreator.com" data-imos-server="https://imos004-dot-im--os.appspot.com" style="">
+		<div id="xprs" data-website-name="sheila/graphic" class="xprs-holder desktop-mode">
+			<div class="main-page ">
+				<div id="content">
+					<div id="vbid-29fe4e33-lok1anrm" class="master container style-29fe4e33-dzebo07f content stripes" data-itemtype="folder" data-creator="" data-itemname="X-Zapz" data-itemslug="x-zapz" data-itemstyleid="style-29fe4e33-dzebo07f" data-margintop="" data-arranger="stripes" data-layout="footer" data-vbid="vbid-29fe4e33-lok1anrm" data-preset-type-id="ITEMS" data-preview-style="style-29fe4e33-dzebo07f" data-style="style-5a24e-kzdyurm3ju" data-absolute-path="" style="visibility: visible;">
+	<!-- ARRANGER SETTINGS -->
+	<div class="arranger-settings" style="display:none;" data-arranger_type="stripes" data-arranger_cols="0" data-arranger_item_max_width="400" data-arranger_item_min_width="230" data-arranger_item_ratio="1" data-arranger_item_spacing="20" data-arranger_items_per_page="all" data-arranger_order_type="regular" data-auto_play="false" data-auto_play_duration="4" data-flex_element_effect=""></div>
+	<div class="layout-settings" style="display:none;" data-type="footer"></div>
+	<div id="children">
+	
+	
+	
+	<!-- MENUS START -->
+		<div id="vbid-fa3ff-mpgftfvw" class="master item-box  header-box style-fa3ff-ilvbh5kv injected   button-effects btn_hover6       animated-color" data-holder-type="header" "="" data-child-type="ORIGIN" data-styleid="style-fa3ff-ilvbh5kv" data-preview-styleid="style-fa3ff-ilvbh5kv" data-preset-type-id="MENUS" data-original-menu-width="344">
+			<div id="no-image" class="stripe-background load-high-res "></div>
+			<div class="header-wrapper item-wrapper menus-wrapper " style="">
+					
+					<div class="item-content leaf menu_layout header content" data-preview-style="style-fa3ff-ilvbh5kv" data-style="style-947c0-1m9fu7koyc" data-behavior-type="NOTHING" data-orig-thumb-height="" data-orig-thumb-width="" data-vbid="vbid-fa3ff-mpgftfvw" data-bgimg="">
+<div class="preview-content-wrapper">
+<div class="preview-content-holder">
+	<div class="left-div" data-orig-font-size="14">
+	<div class="benet" style="min-height:inherit;"></div>
+	<div class="logo-holder">
+		<!-- ICON TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="ICON" style="display:none;"></div>
+
+	</div>
+	<div class="helper-div">
+		<div class="item-details menu">
+			<!-- TITLE TEMPLATE -->
+			
+<div class="preview-title-holder removable-parent">
+	
+		<h2 id="element-cfa617e9861d035" class="preview-element preview-title magic-circle-holder inner-page text-element quick-text-style-menu " data-menu-name="PREVIEW_TITLE" data-orig-font-size="14" style="font-size: 14px;">  SHEILA CHENG</h2>
+		
+	</div>
+	<br>
+
+			<!-- SUBTITLE TEMPLATE -->
+			
+<div class="element-placeholder" data-elementtype="SUBTITLE" style="display:none;"></div>
+
+		</div>
+		</div>
+	</div>
+		<div class="right-div">
+			<div class="benet" style="min-height:inherit;"></div>
+			<!-- LINKS TEMPLATE -->
+			<div class="preview-item-links ">
+<ul class="preview-links-wrapper">
+
+
+	
+		
+		<li class="removable-parent">
+		
+			<a class="removable-parent" href="http://www.sheilacheng.com/" data-link-type="EXISTING" target="_self">
+		
+			<span id="vbid-fa3ff-d3cazic9" class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK">Home</span>
+			</a>
+	
+		</li>
+
+	
+		
+		<li class="removable-parent">
+		
+			<a class="removable-parent" href="http://www.sheilacheng.com/about" data-link-type="EXISTING" target="_self">
+		
+			<span id="c4226199" class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK">About</span>
+			</a>
+	
+		</li>
+
+	
+		
+		<li class="removable-parent">
+		
+			<a class="removable-parent" href="http://www.sheilacheng.com/projects" data-link-type="EXISTING" target="_self">
+		
+			<span id="242cec15" class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK">Projects</span>
+			</a>
+	
+		</li>
+
+	
+		
+		<li class="removable-parent">
+		
+			<a class="removable-parent" href="http://www.sheilacheng.com/contact" data-link-type="EXISTING" target="_self">
+		
+			<span id="61d631b2" class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK">Contact</span>
+			</a>
+	
+		</li>
+
+
+<div class="element-placeholder" data-elementtype="LINK" style="display:none;"></div>
+	
+	</ul>
+</div>
+			
+			
+			<button class="hamburger links-menu-btn  small" type="button">
+  				<span class="hamburger-box">
+   				 <span class="hamburger-inner"></span>
+  				</span>
+			</button>
+			
+		
+			
+		</div>
+	</div>
+</div>
+	<!-- LAYOUT SETTINGS -->
+	<div class="layout-settings" style="display:none;" data-type="menu" data-menu_overlay="relative" data-menu_scroll="false" data-always_minified="false" data-menu_position="top" data-menu_align="left" data-background_color="rgb(255, 255, 255)"></div>
+</div>
+					
+			</div>
+		</div>
+		<!-- MENUS END -->
+		
+		
+	
+	
+	<!-- GALLERIES START -->
+		<div id="vbid-b355773a-0typiopk" class="master item-box  gallery-box style-b355773a-tjumvalb    button-effects btn_hover3" data-holder-type="gallery" "="" data-child-type="NATIVE_ORDER" data-styleid="style-b355773a-tjumvalb" data-preview-styleid="style-b355773a-tjumvalb" data-preset-type-id="GALLERIES" style="min-height: initial;">
+			<div id="no-image" class="stripe-background load-high-res "></div>
+			<div class="gallery-wrapper item-wrapper galleries-wrapper " style="">
+					
+					<div class="sub container style-b355773a-tjumvalb content matrix   " data-itemtype="folder" data-creator="" data-itemname="New folder Copy" data-itemslug="new-folder-copy" data-itemstyleid="style-b355773a-tjumvalb" data-margintop="" data-arranger="matrix" data-layout="multi" data-vbid="vbid-b355773a-0typiopk" data-preset-type-id="GALLERIES" data-preview-style="style-b355773a-tjumvalb" data-style="style-c9a3b-jkqfet22dp" data-absolute-path="">
+	<!-- ARRANGER SETTINGS -->
+	<div class="arranger-settings" style="display:none;" data-arranger_type="matrix" data-arranger_cols="1" data-arranger_item_max_width="1000" data-arranger_item_min_width="699.3" data-arranger_item_ratio="0.6" data-arranger_item_spacing="10" data-arranger_items_per_page="all" data-arranger_order_type="regular" data-auto_play="false" data-auto_play_duration="4" data-flex_element_effect=""></div>
+	<div class="layout-settings" style="display:none;" data-type="multi"></div>
+	<div id="children">
+	
+		
+		<!-- STRIPE HEADER -->
+		<div class="stripe-header-wrapper">
+			<div id="vbid-b355773a-rqunluyn" class="stripe-header sub item-box page-box style-b355773a-tjumvalb       " data-holder-type="page" "="" data-child-type="STYLE" data-styleid="style-b355773a-tjumvalb" data-preview-styleid="style-b355773a-tjumvalb" data-preset-type-id="UNRESOLVED">
+				<div class="page-wrapper item-wrapper " style="">
+					<div class="item-content leaf blocks_layout page content" data-self="vbid-b355773a-rqunluyn" data-preview-style="style-b355773a-tjumvalb" data-style="style-c9a3b-jkqfet22dp" data-orig-thumb-height="" data-orig-thumb-width="" data-vbid="vbid-b355773a-rqunluyn" data-bgimg="">
+			<div class="helper-div middle">
+			<!-- <div class="benet" style="min-height:inherit;"></div> -->
+				<div class="text-side " style="">
+					<div class="vertical-aligner">
+						<div class="item-details blocks-preview-content-wrapper  blocks shrinker-parent" style="position:relative;">
+							<div class="blocks-preview-content-holder shrinker-content">
+									<!--  BY SPECIFIC ORDER -->
+									
+										
+											
+												<br class="upper-line-break">
+<div class="blocks-preview-title-holder removable-parent order-handle">
+	
+	<h2 id="vbid-b355773a-hvhp69cw" class="preview-element blocks-preview-title magic-circle-holder inner-page text-element quick-text-style-menu" data-menu-name="BLOCKS_PREVIEW_TITLE" data-orig-font-size="20" style="font-size: 20px;">X-ZAPZ</h2>
+	
+</div>
+<br class="lower-line-break">
+
+
+
+											
+										
+									
+										
+											
+												
+<br class="upper-line-break">
+<div class="blocks-preview-body-holder removable-parent order-handle">
+	
+	<div id="vbid-b355773a-xlunuwsl" class="preview-element blocks-preview-body magic-circle-holder text-element quick-text-style-menu " data-menu-name="BLOCKS_PREVIEW_BODY">
+		<p>A energy drink brand targeting dancers. </p>
+	</div>
+	
+</div>
+<br class="lower-line-break">
+											
+										
+									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- LAYOUT SETTINGS -->
+<div class="layout-settings" style="display:none;" data-type="blocks"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="items-holder-wrapper">
+			<div id="items-holder">
+	
+	
+	
+	
+	
+	
+		<div id="vbid-b355773a-qqgebisn" class="sub item-box  page-box style-b355773a-tjumvalb left-side right-side top-side" data-holder-type="page" "="" data-child-type="STYLE" data-styleid="style-b355773a-tjumvalb" data-preview-styleid="style-b355773a-tjumvalb" data-preset-type-id="UNRESOLVED" data-row="1" style="clear: left; width: 999px; margin: 20px 0px 10px;">
+			
+			<div class="page-wrapper item-wrapper " style="">
+					
+					<div class="item-content leaf multi_layout page content -container" data-self="vbid-b355773a-qqgebisn" data-preview-style="style-b355773a-tjumvalb" data-style="style-c9a3b-7cunku73tk" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-vbid="vbid-b355773a-qqgebisn" data-bgimg="https://lh3.googleusercontent.com/VGoi0Nt99JdDQ8ELgwdHjXQ7OI9QOw7IEYhp9A61QBcjK4px6PptQZVvC0J77oJgE5_adQui6OiLQsC3">
+<div class="multi-container preview image-cover" style="min-height: inherit;">
+	<div class="Picture item-preview" style="min-height: inherit;">
+		<div class="preview-image-holder">
+			<div id="no-image" class="background-image-div preview-element image-source magic-circle-holder unfold-left load-high-res" data-menu-name="BACKGROUND_IMAGE" style="">
+			</div>
+			<div class="helper-div bottom-center">
+			<!-- <div class="benet" style="min-height:inherit;"></div> -->
+			<div class="pic-side">
+				<div class="vertical-aligner">
+					<div id="vbid-b355773a-lhwa9mnb-holder" class="preview-image-holder inner-pic-holder" data-menu-name="PREVIEW_INLINE_IMAGE_HOLDER">
+
+	<a class="image-link top-layer not-wrapping clickable" data-link-type="LIGHTBOX"></a>
+
+	<div id="vbid-b355773a-lhwa9mnb" class="inner-pic preview-element  magic-circle-holder" data-menu-name="PREVIEW_INLINE_IMAGE" style="background-image: url(&quot;https://lh3.googleusercontent.com/VGoi0Nt99JdDQ8ELgwdHjXQ7OI9QOw7IEYhp9A61QBcjK4px6PptQZVvC0J77oJgE5_adQui6OiLQsC3=s1600&quot;); height: 599.4px;" data-orig-width="1240" data-orig-height="827">
+		<!-- VIDEO TEMPLATE -->
+		
+
+<div class="element-placeholder" data-elementtype="VIDEO" style="display:none;"></div>
+
+
+		<!-- MAP TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="MAP" style="display:none;"></div>
+
+		<!-- RAW TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="RAW" style="display:none;"></div>
+
+	</div>
+	
+</div>
+	
+
+				</div>
+			</div><div class="text-side shrinker-parent" style="">
+					<div class="vertical-aligner">
+						<div class="item-details preview-content-wrapper  multi" style="position:relative;">
+							<div class="draggable-div-holder"></div>
+							<div class="preview-content-holder shrinker-content">
+								
+									
+										<!--  BY NATIVE ORDER -->
+										
+											
+<div class="element-placeholder" data-elementtype="ICON" style="display:none;"></div>
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-title-holder removable-parent order-handle">
+	
+	<h2 id="vbid-b355773a-2fgb72zo" class="preview-element preview-title magic-circle-holder inner-page text-element quick-text-style-menu" data-menu-name="PREVIEW_TITLE" data-orig-font-size="12" style="font-size: 12px;">Battery Element</h2>
+	
+</div>
+<br class="lower-line-break">
+
+										
+											
+
+<div class="element-placeholder" data-elementtype="SUBTITLE" style="display:none;"></div>
+
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-divider-holder removable-parent order-handle">
+	<div id="vbid-b355773a-vpz1gvhn" class="preview-element preview-divider magic-circle-holder quick-text-style-menu" data-menu-name="PREVIEW_DIVIDER">
+	</div>
+</div>
+<br class="lower-line-break">
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-body-holder removable-parent order-handle">
+	
+	<div id="vbid-b355773a-wubcotyi" class="preview-element preview-body magic-circle-holder text-element quick-text-style-menu " data-menu-name="PREVIEW_BODY">
+		<p>Using battery idea as the outside package, easy carry and easy get idea. </p>
+	</div>
+	
+</div>
+<br class="lower-line-break">
+
+										
+											
+<div class="element-placeholder" data-elementtype="PRICE" style="display:none;"></div>
+
+										
+											<div class="preview-form order-handle">
+
+<div class="element-placeholder" data-elementtype="FIELD" style="display:none;"></div>
+</div>
+										
+											<div class="preview-item-links order-handle ">
+	<div class="preview-links-wrapper">
+
+<div class="element-placeholder" data-elementtype="LINK" style="display:none;"></div>
+	
+	</div>
+</div>
+										
+											
+
+<div class="element-placeholder" data-elementtype="SOCIAL" style="display:none;"></div>
+
+
+										
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- LAYOUT SETTINGS -->
+<div class="layout-settings" style="display:none;" data-type="multi"></div>
+					
+			</div>
+		</div>
+		
+		
+		
+	
+	
+	
+		<div id="vbid-b355773a-ma2fiega" class="sub item-box  page-box style-b355773a-tjumvalb left-side right-side" data-holder-type="page" "="" data-child-type="STYLE" data-styleid="style-b355773a-tjumvalb" data-preview-styleid="style-b355773a-tjumvalb" data-preset-type-id="UNRESOLVED" style="clear: left; width: 999px; margin: 10px 0px;" data-row="2">
+			
+			<div class="page-wrapper item-wrapper " style="">
+					
+					<div class="item-content leaf multi_layout page content -container" data-self="vbid-b355773a-ma2fiega" data-preview-style="style-b355773a-tjumvalb" data-style="style-c9a3b-ust9fwf9qp" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-vbid="vbid-b355773a-ma2fiega" data-bgimg="https://lh3.googleusercontent.com/JHwzYVgZSmwh0i4ZdD7V4Cj2Klpnszn4XD7NZlJPjLOxzUt3S73a7L3O4nDqHA5Y-BJUN5IzTF7ho_Xt0lI">
+<div class="multi-container preview image-cover" style="min-height: inherit;">
+	<div class="Picture item-preview" style="min-height: inherit;">
+		<div class="preview-image-holder">
+			<div id="no-image" class="background-image-div preview-element image-source magic-circle-holder unfold-left load-high-res" data-menu-name="BACKGROUND_IMAGE" style="">
+			</div>
+			<div class="helper-div bottom-center">
+			<!-- <div class="benet" style="min-height:inherit;"></div> -->
+			<div class="pic-side">
+				<div class="vertical-aligner">
+					<div id="vbid-b355773a-rxenos9a-holder" class="preview-image-holder inner-pic-holder" data-menu-name="PREVIEW_INLINE_IMAGE_HOLDER">
+
+	<a class="image-link top-layer not-wrapping clickable" data-link-type="LIGHTBOX"></a>
+
+	<div id="vbid-b355773a-rxenos9a" class="inner-pic preview-element  magic-circle-holder" data-menu-name="PREVIEW_INLINE_IMAGE" style="background-image: url(&quot;https://lh3.googleusercontent.com/JHwzYVgZSmwh0i4ZdD7V4Cj2Klpnszn4XD7NZlJPjLOxzUt3S73a7L3O4nDqHA5Y-BJUN5IzTF7ho_Xt0lI=s1600&quot;); height: 599.4px;" data-orig-width="1240" data-orig-height="827">
+		<!-- VIDEO TEMPLATE -->
+		
+
+<div class="element-placeholder" data-elementtype="VIDEO" style="display:none;"></div>
+
+
+		<!-- MAP TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="MAP" style="display:none;"></div>
+
+		<!-- RAW TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="RAW" style="display:none;"></div>
+
+	</div>
+	
+</div>
+	
+
+				</div>
+			</div><div class="text-side shrinker-parent" style="">
+					<div class="vertical-aligner">
+						<div class="item-details preview-content-wrapper  multi" style="position:relative;">
+							<div class="draggable-div-holder"></div>
+							<div class="preview-content-holder shrinker-content">
+								
+									
+										<!--  BY NATIVE ORDER -->
+										
+											
+<div class="element-placeholder" data-elementtype="ICON" style="display:none;"></div>
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-title-holder removable-parent order-handle">
+	
+	<h2 id="vbid-b355773a-bhodwabu" class="preview-element preview-title magic-circle-holder inner-page text-element quick-text-style-menu" data-menu-name="PREVIEW_TITLE" data-orig-font-size="12" style="font-size: 12px;">Flavors </h2>
+	
+</div>
+<br class="lower-line-break">
+
+										
+											
+
+<div class="element-placeholder" data-elementtype="SUBTITLE" style="display:none;"></div>
+
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-divider-holder removable-parent order-handle">
+	<div id="vbid-b355773a-zspfkcmt" class="preview-element preview-divider magic-circle-holder quick-text-style-menu" data-menu-name="PREVIEW_DIVIDER">
+	</div>
+</div>
+<br class="lower-line-break">
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-body-holder removable-parent order-handle">
+	
+	<div id="vbid-b355773a-fzwpxo5g" class="preview-element preview-body magic-circle-holder text-element quick-text-style-menu " data-menu-name="PREVIEW_BODY">
+		<p>4 different flavors, 4 different dancer icon to symbolize the flavors. </p><p>Original Blast/ Apple Pips/ Lemon Break/ Strawberry Pirbuette. </p>
+	</div>
+	
+</div>
+<br class="lower-line-break">
+
+										
+											
+<div class="element-placeholder" data-elementtype="PRICE" style="display:none;"></div>
+
+										
+											<div class="preview-form order-handle">
+
+<div class="element-placeholder" data-elementtype="FIELD" style="display:none;"></div>
+</div>
+										
+											<div class="preview-item-links order-handle ">
+	<div class="preview-links-wrapper">
+
+<div class="element-placeholder" data-elementtype="LINK" style="display:none;"></div>
+	
+	</div>
+</div>
+										
+											
+
+<div class="element-placeholder" data-elementtype="SOCIAL" style="display:none;"></div>
+
+
+										
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- LAYOUT SETTINGS -->
+<div class="layout-settings" style="display:none;" data-type="multi"></div>
+					
+			</div>
+		</div>
+		
+		
+		
+	
+	
+	
+		<div id="vbid-b355773a-0atuxvbh" class="sub item-box  page-box style-b355773a-tjumvalb left-side right-side" data-holder-type="page" "="" data-child-type="STYLE" data-styleid="style-b355773a-tjumvalb" data-preview-styleid="style-b355773a-tjumvalb" data-preset-type-id="UNRESOLVED" style="clear: left; width: 999px; margin: 10px 0px;" data-row="3">
+			
+			<div class="page-wrapper item-wrapper " style="">
+					
+					<div class="item-content leaf multi_layout page content -container" data-self="vbid-b355773a-0atuxvbh" data-preview-style="style-b355773a-tjumvalb" data-style="style-c9a3b-vjft5bpk4i" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-vbid="vbid-b355773a-0atuxvbh" data-bgimg="https://lh3.googleusercontent.com/B_GVg0efMfsxIOVn8bA-GWtP34sNofDEv7ZxgWu8JElw5rm0o_JfpzAV0xckU4m1bBbehyS_roz8jAR0fg">
+<div class="multi-container preview image-cover" style="min-height: inherit;">
+	<div class="Picture item-preview" style="min-height: inherit;">
+		<div class="preview-image-holder">
+			<div id="no-image" class="background-image-div preview-element image-source magic-circle-holder unfold-left load-high-res" data-menu-name="BACKGROUND_IMAGE" style="">
+			</div>
+			<div class="helper-div bottom-center">
+			<!-- <div class="benet" style="min-height:inherit;"></div> -->
+			<div class="pic-side">
+				<div class="vertical-aligner">
+					<div id="vbid-b355773a-7rshsuwn-holder" class="preview-image-holder inner-pic-holder" data-menu-name="PREVIEW_INLINE_IMAGE_HOLDER">
+
+	<a class="image-link top-layer not-wrapping clickable" data-link-type="LIGHTBOX"></a>
+
+	<div id="vbid-b355773a-7rshsuwn" class="inner-pic preview-element  magic-circle-holder" data-menu-name="PREVIEW_INLINE_IMAGE" style="background-image: url(&quot;https://lh3.googleusercontent.com/B_GVg0efMfsxIOVn8bA-GWtP34sNofDEv7ZxgWu8JElw5rm0o_JfpzAV0xckU4m1bBbehyS_roz8jAR0fg=s1600&quot;); height: 599.4px;" data-orig-width="1240" data-orig-height="827">
+		<!-- VIDEO TEMPLATE -->
+		
+
+<div class="element-placeholder" data-elementtype="VIDEO" style="display:none;"></div>
+
+
+		<!-- MAP TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="MAP" style="display:none;"></div>
+
+		<!-- RAW TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="RAW" style="display:none;"></div>
+
+	</div>
+	
+</div>
+	
+
+				</div>
+			</div><div class="text-side shrinker-parent" style="">
+					<div class="vertical-aligner">
+						<div class="item-details preview-content-wrapper  multi" style="position:relative;">
+							<div class="draggable-div-holder"></div>
+							<div class="preview-content-holder shrinker-content">
+								
+									
+										<!--  BY NATIVE ORDER -->
+										
+											
+<div class="element-placeholder" data-elementtype="ICON" style="display:none;"></div>
+
+										
+											
+<div class="element-placeholder" data-elementtype="TITLE" style="display:none;"></div>
+
+										
+											
+
+<div class="element-placeholder" data-elementtype="SUBTITLE" style="display:none;"></div>
+
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-divider-holder removable-parent order-handle">
+	<div id="vbid-b355773a-vo6g16q5" class="preview-element preview-divider magic-circle-holder quick-text-style-menu" data-menu-name="PREVIEW_DIVIDER">
+	</div>
+</div>
+<br class="lower-line-break">
+
+										
+											
+<div class="element-placeholder" data-elementtype="BODY" style="display:none;"></div>
+
+										
+											
+<div class="element-placeholder" data-elementtype="PRICE" style="display:none;"></div>
+
+										
+											<div class="preview-form order-handle">
+
+<div class="element-placeholder" data-elementtype="FIELD" style="display:none;"></div>
+</div>
+										
+											<div class="preview-item-links order-handle ">
+	<div class="preview-links-wrapper">
+
+<div class="element-placeholder" data-elementtype="LINK" style="display:none;"></div>
+	
+	</div>
+</div>
+										
+											
+
+<div class="element-placeholder" data-elementtype="SOCIAL" style="display:none;"></div>
+
+
+										
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- LAYOUT SETTINGS -->
+<div class="layout-settings" style="display:none;" data-type="multi"></div>
+					
+			</div>
+		</div>
+		
+		
+		
+	
+	
+	
+		<div id="vbid-b355773a-pdyv5vqd" class="sub item-box  page-box style-b355773a-tjumvalb left-side right-side bottom-side" data-holder-type="page" "="" data-child-type="STYLE" data-styleid="style-b355773a-tjumvalb" data-preview-styleid="style-b355773a-tjumvalb" data-preset-type-id="UNRESOLVED" style="clear: left; width: 999px; margin: 10px 0px 20px;" data-row="4">
+			
+			<div class="page-wrapper item-wrapper " style="">
+					
+					<div class="item-content leaf multi_layout page content -container" data-self="vbid-b355773a-pdyv5vqd" data-preview-style="style-b355773a-tjumvalb" data-style="style-c9a3b-3la37uycoo" data-orig-thumb-height="" data-orig-thumb-width="" data-vbid="vbid-b355773a-pdyv5vqd" data-bgimg="">
+<div class="multi-container preview image-cover" style="min-height: inherit;">
+	<div class="Picture item-preview" style="min-height: inherit;">
+		<div class="preview-image-holder">
+			<div id="no-image" class="background-image-div preview-element image-source magic-circle-holder unfold-left load-high-res" data-menu-name="BACKGROUND_IMAGE" style="">
+			</div>
+			<div class="helper-div bottom-center">
+			<!-- <div class="benet" style="min-height:inherit;"></div> -->
+			<div class="pic-side">
+				<div class="vertical-aligner">
+					<div id="no-image-holder" class="preview-image-holder inner-pic-holder" data-menu-name="PREVIEW_INLINE_IMAGE_HOLDER">
+
+	<div id="no-image" class="inner-pic preview-element  magic-circle-holder  load-high-res " data-menu-name="PREVIEW_INLINE_IMAGE" style="height: 599.4px;" data-orig-width="" data-orig-height="">
+		<!-- VIDEO TEMPLATE -->
+		
+
+<div class="element-placeholder" data-elementtype="VIDEO" style="display:none;"></div>
+
+
+		<!-- MAP TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="MAP" style="display:none;"></div>
+
+		<!-- RAW TEMPLATE -->
+		
+<div class="element-placeholder" data-elementtype="RAW" style="display:none;"></div>
+
+	</div>
+	
+</div>
+	
+
+				</div>
+			</div><div class="text-side shrinker-parent" style="">
+					<div class="vertical-aligner">
+						<div class="item-details preview-content-wrapper  multi" style="position:relative;">
+							<div class="draggable-div-holder"></div>
+							<div class="preview-content-holder shrinker-content">
+								
+									
+										<!--  BY NATIVE ORDER -->
+										
+											
+<div class="element-placeholder" data-elementtype="ICON" style="display:none;"></div>
+
+										
+											
+<div class="element-placeholder" data-elementtype="TITLE" style="display:none;"></div>
+
+										
+											
+
+<div class="element-placeholder" data-elementtype="SUBTITLE" style="display:none;"></div>
+
+
+										
+											
+<br class="upper-line-break">
+<div class="preview-divider-holder removable-parent order-handle">
+	<div id="vbid-b355773a-j85skswa" class="preview-element preview-divider magic-circle-holder quick-text-style-menu" data-menu-name="PREVIEW_DIVIDER">
+	</div>
+</div>
+<br class="lower-line-break">
+
+										
+											
+<div class="element-placeholder" data-elementtype="BODY" style="display:none;"></div>
+
+										
+											
+<div class="element-placeholder" data-elementtype="PRICE" style="display:none;"></div>
+
+										
+											<div class="preview-form order-handle">
+
+<div class="element-placeholder" data-elementtype="FIELD" style="display:none;"></div>
+</div>
+										
+											<div class="preview-item-links order-handle ">
+	<div class="preview-links-wrapper">
+
+<div class="element-placeholder" data-elementtype="LINK" style="display:none;"></div>
+	
+	</div>
+</div>
+										
+											
+
+<div class="element-placeholder" data-elementtype="SOCIAL" style="display:none;"></div>
+
+
+										
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- LAYOUT SETTINGS -->
+<div class="layout-settings" style="display:none;" data-type="multi"></div>
+					
+			</div>
+		</div>
+		
+		
+		
+	
+		
+			</div>
+		</div>
+		
+		
+	
+	<div id="pagination-wrapper" class="layer5" style="display: none;"><div id="pagination-holder" class="magic-circle-holder" data-menu-name="PAGINATION_SETTINGS"><div id="pagination-btn">More</div></div></div></div>
+</div>
+					
+			</div>
+		</div>
+		<!-- GALLERIES END -->
+		
+		
+	
+	
+	<!-- FOOTERS START -->
+		<div id="vbid-fa3ff-4unq7zoh" class="master item-box  footer-box style-fa3ff-x9gykam3 injected         " data-holder-type="footer" "="" data-child-type="ORIGIN" data-styleid="style-fa3ff-x9gykam3" data-preview-styleid="style-fa3ff-x9gykam3" data-preset-type-id="FOOTERS">
+			<div id="no-image" class="stripe-background load-high-res "></div>
+			<div class="footer-wrapper item-wrapper footers-wrapper " style="">
+					
+					<div class="item-content leaf footer_layout footer content" data-preview-style="style-fa3ff-x9gykam3" data-style="style-947c0-wwyms3brje" data-orig-thumb-height="" data-orig-thumb-width="" data-vbid="vbid-fa3ff-4unq7zoh" data-bgimg="">
+<div class="preview-content-wrapper">
+<div class="preview-content-holder">
+	<div class="left-div">
+	<div class="benet" style="min-height:inherit;"></div>
+		<div class="logo-holder">
+			
+<div class="element-placeholder" data-elementtype="ICON" style="display:none;"></div>
+
+			<!--
+			 <div data-href="vbid-fa3ff-4unq7zoh"  class="preview image-cover removable-parent" >
+				<div class="Picture item-preview">
+					<div class="preview-image-holder">
+						<div id="no-image" class="image-source preview-element  magic-circle-holder unfold-left" data-menu-name="PREVIEW_IMAGE" style=""></div>
+					</div>
+				</div>
+			</div> 
+			-->
+		</div>
+		<div class="helper-div">
+			<div class="item-details footer">
+				<!-- TITLE TEMPLATE -->
+				
+<div class="element-placeholder" data-elementtype="TITLE" style="display:none;"></div>
+
+				<!-- SUBTITLE TEMPLATE -->
+				
+<div class="element-placeholder" data-elementtype="SUBTITLE" style="display:none;"></div>
+
+			</div>
+			</div>
+	</div>
+	
+		<div class="right-div">
+		<div class="benet" style="min-height:inherit;"></div>
+			
+
+<div class="element-placeholder" data-elementtype="SOCIAL" style="display:none;"></div>
+
+
+		</div>
+		
+		<div class="center-div">
+			<div class="links-wrapper">
+			<!-- LINKS TEMPLATE -->
+			<div class="preview-item-links ">
+<div class="preview-links-wrapper">
+
+
+
+<div class="element-placeholder" data-elementtype="LINK" style="display:none;"></div>
+	
+	</div>
+</div>
+			</div>
+		</div>
+		<div class="bottom-div">
+			
+<div class="element-placeholder" data-elementtype="BODY" style="display:none;"></div>
+
+		</div>
+
+	</div>
+	</div>
+	</div>
+	<!-- LAYOUT SETTINGS -->
+	<div class="layout-settings" style="display:none;" data-type="footer"></div>
+					
+			</div>
+		</div>
+		<!-- FOOTERS END -->
+		
+		
+	
+		
+	
+	</div>
+</div>
+				</div>
+			</div>
+		<div class="light-box-wrapper  space-layer" style="">
+	<div class="light-box-image-holder">
+		<div class="light-box-image animated" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-vbid="vbid-b355773a-qqgebisn" style="background-image: url(&quot;https://lh3.googleusercontent.com/VGoi0Nt99JdDQ8ELgwdHjXQ7OI9QOw7IEYhp9A61QBcjK4px6PptQZVvC0J77oJgE5_adQui6OiLQsC3=s1240&quot;); width: 1512px; height: 780.8px; max-width: 1240px; max-height: 827px;">
+			
+		</div>
+		<div class="lightbox-text-wrapper ">
+			<div class="lightbox-text-holder animated" style="opacity: 1;">
+				<div class="lightbox-title" style="font-family: Montserrat; text-align: center; margin-left: auto; margin-right: auto;">Battery Element</div>
+				<div class="lightbox-subtitle"></div>
+				<div id="paginator" style="display:none;"><div class="page-navigator" data-bgimg="https://lh3.googleusercontent.com/VGoi0Nt99JdDQ8ELgwdHjXQ7OI9QOw7IEYhp9A61QBcjK4px6PptQZVvC0J77oJgE5_adQui6OiLQsC3=s1240" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-title="Battery Element" data-subtitle="" data-vbid="vbid-b355773a-qqgebisn"></div><div class="page-navigator" data-bgimg="https://lh3.googleusercontent.com/JHwzYVgZSmwh0i4ZdD7V4Cj2Klpnszn4XD7NZlJPjLOxzUt3S73a7L3O4nDqHA5Y-BJUN5IzTF7ho_Xt0lI=s1240" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-title="Flavors " data-subtitle="" data-vbid="vbid-b355773a-ma2fiega"></div><div class="page-navigator" data-bgimg="https://lh3.googleusercontent.com/B_GVg0efMfsxIOVn8bA-GWtP34sNofDEv7ZxgWu8JElw5rm0o_JfpzAV0xckU4m1bBbehyS_roz8jAR0fg=s1240" data-orig-thumb-height="827" data-orig-thumb-width="1240" data-title="" data-subtitle="" data-vbid="vbid-b355773a-0atuxvbh"></div></div>
+			</div>
+		</div>
+	</div>
+	
+		<img src="./X-Zapz - sheila_graphic_files/delete_on.png" class="close-lightbox-btn clickable" style="opacity: 1;">
+		<img src="./X-Zapz - sheila_graphic_files/lightbox_arrow_left.png" class="lightbox-arrow lightbox-left clickable top-layer">
+		<img src="./X-Zapz - sheila_graphic_files/lightbox_arrow_right.png" class="lightbox-arrow lightbox-right clickable top-layer">
+</div>
+
+	</div>
+	
+	<!--  JS -->
+	<script src="./X-Zapz - sheila_graphic_files/stripes_arranger.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/matrix_arranger.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/menu_layout.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/multi_layout.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/footer_layout.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/blocks_layout.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/left_layout.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/lightbox.js" type="text/javascript"></script>
+	<script src="./X-Zapz - sheila_graphic_files/spimeengine.js" type="text/javascript"></script>
+	
+	
+	
+
+	
+	<!--  SHOPROCKET  ECOMMERCE  -->
+	<script>
+		var JSR = jQuery.noConflict();
+		var $ = jQuery.noConflict();
+	</script>		
+	
+	<input type="hidden" name="sr-companyid" id="sr-companyid" value="">
+	 
+
+
+	
+<iframe frameborder="0" allowtransparency="true" src="./X-Zapz - sheila_graphic_files/index-5b7eb47b5e330ba7639ee7a27de2e6e5.html" name="stripe_checkout_app" class="stripe_checkout_app" style="z-index: 2147483647; display: none; background: rgba(0, 0, 0, 0.004); border: 0px none transparent; overflow-x: hidden; overflow-y: auto; visibility: visible; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></iframe></body></html>
