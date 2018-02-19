@@ -1,0 +1,205 @@
+* { box-sizing: border-box; }
+
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+}
+.header {
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  padding: 25px;
+  top:0;
+  left: 0;
+ 
+}
+.caption{
+  margin-left: 40px;
+  font-size: 40px;
+  width:400px;
+  height:50px;
+  background: red;
+  color: white;
+}
+.item div{ width: 400px;}
+
+.item {
+  display: inline-block;
+  width: 500px;
+  height: 800px;
+  font-size: 16px;
+}
+
+.code{
+  font-size: 16px;
+  margin: 10px 40px 10px 40px;
+  width: 400px;
+  height: 200px;
+  color: white;
+  
+}
+img{ width: 400px;
+height:400px;
+overflow: hidden;
+position: relative;
+}
+
+figure{
+  width: 400px;
+  height: 400px;
+}
+
+figure{ overflow: hidden;}
+
+.h0{
+  color: black;
+}
+
+
+  /* effects starts here */
+
+
+  /* zoom in */
+.hover1 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover1 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* Zoom out */
+.hover2 figure img {
+	width: 700px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover2 figure:hover img {
+	width: 400px;
+}
+/* Slide */
+.hover3 figure img {
+	margin-left: 100px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover3 figure:hover img {
+	margin-left: 0;
+}
+
+
+/* Rotate */
+.hover4 figure img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover4 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+/* Blur */
+.hover5 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.hover5 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* Gray scale */
+.hover6 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover6 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* Blur+grayscale */
+.hover7 figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover7 figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+/* Sepia */
+.hover8 figure img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .5s ease-in;
+	transition: .5s ease-in;
+}
+.hover8 figure:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+/* Opacity */
+.hover9 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover9 figure:hover img {
+	opacity: .5;
+}
+
+/* Opacity2 */
+.hover10 figure {
+	background: #7900eb;
+}
+.hover10 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+	opacity: .3;
+}
+
+/* Flashing */
+.hover11 figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
