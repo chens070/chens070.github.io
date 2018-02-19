@@ -8,13 +8,18 @@ body{
 	color: white;
 }
 .header {
-	font-size: 40px;
+	font-size: 60px;
 	color: yellow;
   width: 100%;
   padding: 25px;
   top:0;
   left: 0;
  
+}
+.discription{
+	width: 760px;
+	margin-left: 30px;
+	font-size: 25px;
 }
 .container{
 	margin: 50px 50px 50px 50px;
