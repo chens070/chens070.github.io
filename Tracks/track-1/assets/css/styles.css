@@ -1,4 +1,4 @@
-body{
+/* body{
 	margin: 0;
     padding-top: 20px;
     background: blue;
@@ -48,4 +48,64 @@ body{
    color:#fff;
    text-align: center;    
    font-family:sans-serif;
+} */
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1{font-size: 60px;
+    right:0;
+}
+.coffee{
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.cup{
+    width: 200px;
+    height: 180px;
+    border: 10px solid black;
+    border-radius: 0 0 50px 50px;  
+    float:left;
+}
+
+.expresso{
+    background: rgb(173, 131, 54);
+    height: 80%;
+    margin-top:36px;
+    border-radius: 0 0 40px 40px;
+    text-align: center;
+}
+/* .handle{
+    height: 40px;
+    width: 40px;
+    border: 15px solid black;
+    border-left: none;
+    border-radius: 50px;
+} */
+
+.plate{
+    width: 250px;
+    height: 20px;
+    background: black;
+}
+
+.caption{
+   width:100px;
+   height: 76px;
+}
+.add-button{
+    font-size: 60px;
+    float: left;
+    margin-top:60px;
+    font-weight: bold;
+}
+
+.coffee:hover .expresso{
+    background: blue;
 }
