@@ -12,6 +12,7 @@ body{
   padding: 25px;
   top:0;
   left: 0;
+  z-index: 100;
 }
 
 .cart-button {
@@ -51,12 +52,21 @@ body{
 .line-item-img{
   width: 100px;
   height: 100px;
-  background: url('../img/b.jpg') center center no-repeat;
+  background: #fff center center no-repeat;
   /* Full writing below
   background-position: center center;
   background-repeat: no-repeat; */
   background-size: cover;
 }
+.a { background-image: url('../img/a.jpg') }
+.b { background-image: url('../img/b.jpg') }
+.c { background-image: url('../img/c.jpg') }
+.d { background-image: url('../img/d.jpg') } 
+.e { background-image: url('../img/e.jpg') }
+.f { background-image: url('../img/f.jpg') }
+.g { background-image: url('../img/g.jpg') }
+.h { background-image: url('../img/h.jpg') }
+
 .line-item-price{
   position: absolute;
   top: 50%;
