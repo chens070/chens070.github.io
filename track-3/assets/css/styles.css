@@ -29,8 +29,8 @@ h1{
   height: 45px;
   margin-top:2.5px;
   margin-left: 2.5px;
-  animation: blink-animation 1s steps(5,start) infinite;
-  -webkit-animation: blink-animation 1s steps(5,start) infinite;
+  animation: blink-animation .7s steps(5,start) infinite;
+  -webkit-animation: blink-animation .7s steps(5,start) infinite;
 }
 
 
