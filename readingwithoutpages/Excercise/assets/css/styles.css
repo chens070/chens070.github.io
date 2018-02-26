@@ -1,0 +1,61 @@
+body{
+  font-family:'Lucida Grande';
+  margin:0;
+  padding:0;
+
+  
+}
+.title{
+  padding-top:100px;
+  font-size: 144px;
+  text-align: center;
+  font-weight: bold;
+  background: orange;
+  color: #fff;
+}
+.podshover{
+  margin:0 auto;
+  margin-left: 50px;
+}
+
+.h1{
+  color: red;
+}
+.pod {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+.pod .pod-fill {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.pod:hover .pod-fill {
+  display: inline;
+}
+
+.container{
+  color: black;
+
+}
+.article{
+  padding: 5%;
+  width: 45%;
+  height: 400px;
+  background: yellow;
+  float: left;
+  overflow: scroll;
+}
+
+.reviews{
+  width: 45%;
+  height: 500px;
+  background: red;
+  float: left;
+  overflow: scroll;
+}
