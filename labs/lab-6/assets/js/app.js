@@ -20,9 +20,25 @@ $('.cart-toggle').click(function() {
 function add_to_cart(line_item){
 // get img and price of item clicked
 // inject html with img and price
-var price = $(line_item).data('price'),
+var value = $(line_item).data('value'),
+    price = $(line_item).data('price'),
     img   = $(line_item).data('img'),
     line_item_html = '<div class="line-item"><div class="line-item-img ' + img + '"></div><div class="line-item-price">' + price + '</div></div>';
 
-$('.line-items').append(line_item_html);
+$('.line-items').prepend(line_item_html);
+  update_total(value);
+}
+
+function update_total(line_item_value) {
+  // find value of total
+  // find value of added item
+  // add them together
+  // update .total with new number
+  var current_value = $('.total').data('value'),
+      new_value = current_value + line_item_value,
+      new_price = new_value.toLocaleString();
+
+  $('.total').html(new_price);
+  $('.total').data('value', new_value);
+  
 }
