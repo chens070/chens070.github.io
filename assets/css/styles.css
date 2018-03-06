@@ -1,10 +1,30 @@
 * {box-sizing: border-box;}
 
+body{
+  background: pink;
+  font-size: 40px;
+  color: black;
+  padding:0;
+  margin:0;
+}
 
 ul{list-style-type: none;}
 
 .c{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{ width: 100%; }
+
+a:link, a:visited {
+  background-color: pink;
+  color: white;
+  padding: 14px 25px;
   text-align: center;
-  margin: 50px auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+a:hover, a:active {
+  background-color: rgb(119, 0, 255);
 }
