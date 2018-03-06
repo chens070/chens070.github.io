@@ -12,8 +12,10 @@ ul{list-style-type: none;}
 
 .c{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
-a{ width: 100%; }
+a{ width: 100%; 
+  margin-left: -20px}
 
 a:link, a:visited {
   background-color: pink;
