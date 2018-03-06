@@ -1,41 +1,49 @@
 body{
-	margin: 0;
-  padding-top: 20px;
-  background: green;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.calender{
-  position: relattive;
-  width: 600px;
-  margin: 0 auto;
+.header{
+  width: 500px;
+  height: 30px;
+  background: rgb(163, 163, 163);
+}
+.minebox{
+  width: 900px;
+  position: relative;
+  font-size: 60px;
   text-align: center;
-  font-family: sans-serif;
-  color:black;
-  stroke-width: 10px;}
-
-  .tuesday{color: green;}
-
-
-.c{
-  display: inline-block;
-  font-size: 72px;
-  outline-color: black;
-  width: 80px;
-  height: 80px;
+}
+.mine{
+  width: 92px;
+  height:92px;
+  background:black;
+  border: 4px solid black;
+  float: left;
+  margin: 5px;
 }
 
-.wrapper{
-  margin: 10% 20%;
-  display: inline-block;
-  padding: 10px;
-  font-family: "Trade Gothic W01 Bold 2", sans-serif;
-  font-size: 5vw;
-}
-.q{ border-bottom: 1.25vw solid black;}
-.q1{ border-top: 1.25vw solid black;}
-.box{
-  width:1000px;
-  height:100%;
+.mine:hover{
   background: #fff;
-  font-size: 200px;
 }
+
+img { max-width: 92px; }
+
+.m17 img{ opacity: 0; }
+.m17 img:hover{ opacity: 1;}
+
+.m23 img{ opacity: 0; }
+.m23 img:hover{ opacity: 1;}
+
+.m35 img{ opacity: 0; }
+.m35 img:hover{ opacity: 1;}
+
+
+.m46 img{ opacity: 0; }
+.m46 img:hover{ opacity: 1;}
+
+
+.m64 img{ opacity: 0; }
+.m64 img:hover{ opacity: 1;}
