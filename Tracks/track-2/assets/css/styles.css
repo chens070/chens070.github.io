@@ -1,14 +1,15 @@
 body{
   margin: 0;
   padding: 0;
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  color: rgb(54, 54, 54);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(155, 155, 155);
 }
-
-.header{
-  width: 500px;
-  height: 30px;
-  background: rgb(163, 163, 163);
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
 }
 .minebox{
   width: 900px;
@@ -19,8 +20,8 @@ body{
 .mine{
   width: 92px;
   height:92px;
-  background:black;
-  border: 4px solid black;
+  background:rgb(54, 54, 54);
+  border: 4px solid rgb(54, 54, 54);
   float: left;
   margin: 5px;
 }
